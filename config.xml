@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" 
+	id        = "nl.zuurstof.theta" 
+	version   = "1.0" >
+
+<name>Zuurstof Theta</name>
+
+<description></description>
+
+<author href="http://www.zuurstof.nl" email="info@zuurstof.nl">
+Zuurstof B.V.
+</author>
+
+<preference name="orientation" value="default" />
+<preference name="webviewbounce" value="false" />
+<preference name="stay-in-webview" value="false" />
+<access origin="*" />
+
+<feature name="http://api.phonegap.com/1.0/network"/>
+
+</widget>

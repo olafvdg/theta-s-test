@@ -13,7 +13,7 @@ $(document).ready(function() {
 			'Content-Length': mydata.length
 		},
 		data: mydata,
-		success: function(data) {
+		complete: function(data) {
 			alert(data);
 		},
 		dataType: 'json'

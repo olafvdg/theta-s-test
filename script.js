@@ -14,7 +14,7 @@ $(document).ready(function() {
 		},
 		data: mydata,
 		success: function(data) {
-			console.log(data);
+			alert(data);
 		},
 		dataType: 'json'
 	});

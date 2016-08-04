@@ -5,14 +5,14 @@ $(document).ready(function() {
 		};
 		
     $.ajax({
-		type: "POST",
-		url: 'http://192.168.1.1/osc/commands/execute',
+		type: "GET",
+		url: 'http://192.168.1.1/osc/info',
 		headers: {
 			'Content-Type': 'application/json',
-			'Accept': 'application/json',
-			'Content-Length': mydata.length
+			'Accept': 'application/json'
+			//'Content-Length': mydata.length
 		},
-		data: JSON.stringify(mydata),
+		//data: JSON.stringify(mydata),
 		complete: function(data) {
 			alert(JSON.stringify(data));
 		},

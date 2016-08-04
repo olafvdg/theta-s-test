@@ -8,11 +8,11 @@ $(document).ready(function() {
 		type: "POST",
 		url: 'http://192.168.1.1/osc/commands/execute',
 		headers: {
-			'Content-Type':'application/json;charset=utf-8',
+			'Content-Type': 'application/json',
 			'Accept': 'application/json',
 			'Content-Length': mydata.length
 		},
-		data: mydata,
+		data: JSON.stringify(mydata),
 		complete: function(data) {
 			alert(JSON.stringify(data));
 		},

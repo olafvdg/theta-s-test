@@ -1,18 +1,11 @@
-$(document).ready(function() {
-	var mydata = {
-			"name": "camera.startSession",
-			"parameters": {}
-		};
-		
+$(document).ready(function() {	
     $.ajax({
 		type: "POST",
 		url: 'http://192.168.1.1:80/osc/commands/execute',
-		headers: {
-			'Content-Type': 'application/json',
-			'Accept': 'application/json',
-			'Content-Length': mydata.length
-		},
-		data: JSON.stringify(mydata),
+		data: JSON.stringify({
+			"name": "camera.startSession",
+			"parameters": {}
+		}),
 		complete: function(data) {
 			alert(JSON.stringify(data));
 		},
